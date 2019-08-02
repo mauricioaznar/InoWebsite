@@ -39,3 +39,15 @@ p {
   color: white;
 }
 
+section {
+  padding-top: 4rem;
+  margin-top: -4rem;
+}
+
+.scroll-spy-padding {
+  padding-top: 65px;
+}
+
+.card-columns {
+  column-count: 3;
+}

@@ -20,19 +20,50 @@
   <meta name="theme-color" content="#fafafa">
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navbar" data-offset="10">
   <!--[if IE]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 
+  <div id="casa"></div>
   <!-- Add your site or application content here -->
   <!-- Add your site or application content here -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light" id="navbar">
     <a class="navbar-brand" href="#">Grupo inopack</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#casa">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#nosotros">Nosotros</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarServicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Servicios
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarServicesDropdown">
+            <a class="dropdown-item" href="#molienda">Molienda</a>
+            <a class="dropdown-item" href="#lavado">Lavado</a>
+            <a class="dropdown-item" href="#peletizado">Peletizado</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarProductsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Productos
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarProductsDropdown">
+            <a class="dropdown-item" href="#pellets">Pellets</a>
+            <a class="dropdown-item" href="#bolsa">Bolsa</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#nosotros">Contacto</a>
+        </li>
+      </ul>
     </div>
   </nav>
 
@@ -40,15 +71,7 @@
     <h1 class="title"><i>"Creando sinergias, cerrando circulos"</i></h1>
   </div>
   <!-- Section: Features v.1 -->
-  <section class="text-center my-5">
-
-    <!-- Section heading -->
-    <h2 class="h1-responsive font-weight-bold my-5">Grupo inopack</h2>
-    <!-- Section description -->
-    <p class="lead grey-text w-responsive mx-auto mb-5">
-      Somos una empresa especializada en la recolección, proceso y comercialización de desperdicios plasticos industriales.
-    </p>
-
+  <section class="text-center my-5 scroll-spy-padding" id="nosotros">
     <!-- Grid row -->
     <div class="row">
 
@@ -92,18 +115,18 @@
   <!-- Section: Features v.1 -->
 
 
-  <section class="my-5">
+  <section class="my-5 scroll-spy-padding">
     <div class="jumbotron">
       <h2 class="display-4">Porque nosotros?</h2>
       <p class="lead">Ofrecemos una variedad de productos y servicios de alta calidad</p>
       <hr class="my-4">
     </div>
   </section>
-  <section class="my-5">
+  <section class="my-5 scroll-spy-padding">
     <div class="container">
       <h1 class="display-2">Servicios</h1>
       <hr/>
-      <div class="card mb-4">
+      <div class="card mb-4" id="molienda">
         <img src="img/tomaareabaca.jpeg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Molienda</h5>
@@ -147,16 +170,6 @@
             <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Texto 2</div>
             <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Texto 3</div>
           </div>
-          <p>
-            <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-              Link with href
-            </a>
-          </p>
-          <div class="collapse mb-4" id="collapseExample">
-            <div class="card card-body">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-            </div>
-          </div>
           <div class="card-deck justify-content-center">
             <div class="card bg-dark text-white" style="max-width: 16rem">
               <img src="img/procesado.jpg" class="card-img-top" alt="...">
@@ -179,35 +192,40 @@
           </div>
         </div>
       </div>
-      <div class="card-deck justify-content-around">
+      <div id="lavado"></div>
+      <div id="peletizado"></div>
+      <div class="card-columns scroll-spy-padding">
         <div class="card" style="max-width: 16rem">
           <img src="img/emplaye_edited.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">Lavado</h5>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <p>
+              <a class="btn btn-primary" data-toggle="collapse" href="#collapseLavadoExample" role="button" aria-expanded="false" aria-controls="collapseLavadoExample">
+                Link with href
+              </a>
+            </p>
+            <div class="collapse mb-4" id="collapseLavadoExample">
+              <div class="card card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+              </div>
+            </div>
           </div>
         </div>
         <div class="card" style="max-width: 16em">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <h5 class="card-title">Peletizado</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
           </div>
-          <img src="img/triturado.jpg" class="card-img" alt="...">
-        </div>
-        <div class="card" style="max-width: 16rem">
-          <img src="img/lavado_edited.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
+          <img src="img/pellet.jpg" class="card-img" alt="...">
         </div>
       </div>
     </div>
   </section>
-  <section class="my-5">
+  <div id="pellets"></div>
+  <div id="bolsa"></div>
+  <section class="my-5 scroll-spy-padding">
     <div class="container">
       <h1 class="display-2">Productos</h1>
       <hr/>
@@ -227,7 +245,7 @@
       </div>
     </div>
   </section>
-  <section class="contact-section my-5">
+  <section class="contact-section my-5 scroll-spy-padding" id="contacto">
 
     <!-- Form with header -->
     <div class="card">
