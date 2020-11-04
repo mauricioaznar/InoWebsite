@@ -29,13 +29,13 @@
 }
 
 .certificate-block .title {
-  color: white;
+  color: #FF0000;
   text-align: center;
   margin-top: 15px;
 }
 
 .certificate-image {
-  filter: invert(100%);
+  filter: invert(13%) sepia(80%) saturate(7486%) hue-rotate(360deg) brightness(102%) contrast(113%);
 }
 
 p {
