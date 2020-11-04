@@ -8,6 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
@@ -20,45 +22,219 @@
   <meta name="theme-color" content="#fafafa">
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navbar" data-offset="10">
   <!--[if IE]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 
+  <div id="casa"></div>
   <!-- Add your site or application content here -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <!-- Add your site or application content here -->
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light" id="navbar">
     <a class="navbar-brand" href="#">Grupo inopack</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#casa">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#nosotros">Nosotros</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarServicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Servicios
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarServicesDropdown">
+            <a class="dropdown-item" href="#molienda">Molienda</a>
+            <a class="dropdown-item" href="#lavado">Lavado</a>
+            <a class="dropdown-item" href="#peletizado">Peletizado</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarProductsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Productos
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarProductsDropdown">
+            <a class="dropdown-item" href="#pellets">Pellets</a>
+            <a class="dropdown-item" href="#bolsa">Bolsa</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contacto">Contacto</a>
+        </li>
+      </ul>
     </div>
   </nav>
 
-  <div class="parallax"></div>
-
-  <div class="card-deck">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Compra</h5>
-        <p class="card-text">Compramos polietileno baja densidad y polietileno alta densidad</p>
-        <p class="card-text"></p>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Maquila</h5>
-        <p class="card-text">En el proceso filtramos los materiales no plasticos para garantizar una alta calidad en el resultado.</p>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Venta</h5>
-        <p class="card-text">Fabricamos bolsa utilizando materiales recilados. Contamos con un sistema de pigmentacion para agregarle el color deseado. Contamos con una gran variedad de maquinas que permiten fabricar la bolsa con las medidas deseadas</p>
-      </div>
-    </div>
+  <div class="parallax">
+    <h1 class="title"><i>"Creando sinergias, cerrando circulos"</i></h1>
   </div>
 
+  <!-- Section: Features v.1 -->
+  <section class="container-fluid my-5" id="nosotros">
+    <!-- Grid row -->
+    <div class="row d-flex justify-content-between">
+
+      <!-- Grid column -->
+      <div class="col-md-4 p-0 text-center">
+
+        <i class="fas fa-flag fa-3x cyan-text"></i>
+        <h5 class="font-weight-bold my-4">Mision</h5>
+        <p class="grey-text mb-md-0 mb-5">Hacer de la economia circular una realidad
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-4 p-0 text-center">
+
+        <i class="far fa-eye fa-3x orange-text"></i>
+        <h5 class="font-weight-bold my-4">Vision</h5>
+        <p class="grey-text mb-0">Posicionarse como lideres a nivel estatal en el giro del recilado y fabricacion de productos plasticos fomentando un uso apropiado para el medio ambiente
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-4 p-0 text-center">
+
+        <i class="fas fa-heart fa-3x red-text"></i>
+        <h5 class="font-weight-bold my-4">Objetivo</h5>
+        <p class="grey-text mb-md-0 mb-5">
+          Convertir los desperdicios plasticos de otras empresas y de la comunidad en productos de la mejor calidad hechos de material 100% reciclado
+        </p>
+
+      </div>
+
+    </div>
+    <!-- Grid row -->
+
+  </section>
+  <!-- Section: Features v.1 -->
+
+
+
+  <section class="my-5 scroll-spy-padding">
+    <div class="jumbotron">
+      <h2 class="display-4">Porque nosotros?</h2>
+      <p class="lead">Somos una empresa socialmente responsable que provee una variedad de productos hechos de material 100% reciclado y servicios de alta calidad. Nuestros procesos estan siendo inovados por especialistas y estos cambios toman en consideracion las necesidades de nuestros clientes y del medio ambiente. Asi mismo, el procesamiento de la basura contribuye a un yucatan mas limpio</p>
+      <hr class="my-4">
+    </div>
+  </section>
+
+  <section class="video">
+    <iframe id="video" src="https://www.youtube.com/embed/A10tqXUV7Ok?rel=0&amp&controls=1&amp&showinfo=0&autoplay=1&loop=1&rel=0&iv_load_policy=3&mute=1&playlist=A10tqXUV7Ok" frameborder="0" allowfullscreen>
+    </iframe>
+  </section>
+
+  <section class="scroll-spy-padding">
+    <div class="container-fluid mb-4">
+      <div class="row d-flex justify-content-around">
+        <div class="col-sm-5">
+          <div class="card mb-4" id="molienda">
+            <img src="img/baca.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title display-4">Productos</h5>
+              <ul class="list-unstyled">
+                <li class="media">
+                  <img src="img/bultos.jpg" class="mr-3" alt="...">
+                  <div class="media-body">
+                    <h5 class="mt-0 mb-1">Bolsas</h5>
+                    Ofrecemos una bolsas tipo <b>injerto</b>, <b>camiseta</b> y <b>basura</b> de calibre y color personalizable
+                  </div>
+                </li>
+                <li class="media my-4">
+                  <img src="img/rollos.jpg" class="mr-3" alt="...">
+                  <div class="media-body">
+                    <h5 class="mt-0 mb-1">Rollos</h5>
+                    Contamos con una amplia variedad de rollos de distintas medidas y calibres
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-5">
+          <div class="card mb-4">
+            <img src="img/pellet2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title display-4">Servicios</h5>
+              <ul class="list-unstyled">
+                <li class="media">
+                  <img src="img/molienda.jpg" class="mr-3" alt="...">
+                  <div class="media-body">
+                    <h5 class="mt-0 mb-1">Maquila de molienda</h5>
+                    Maquilamos materiales de difertenes tipos con maquinaria de alta tecnología
+                  </div>
+                </li>
+                <li class="media my-4">
+                  <img src="img/lavadora.jpg" class="mr-3" alt="...">
+                  <div class="media-body">
+                    <h5 class="mt-0 mb-1">Lavado</h5>
+                    Utilizamos procesos inovadores para descontaminar materiales plasticos
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contacto">
+    <div class="jumbotron">
+      <h1 class="display-2">Contacto</h1>
+      <hr>
+      <div class="row justify-content-center">
+        <div class="col-md-6 col-sm-12 mt-5 rounded">
+          <form action="" method="post" id="form-box" name="contacto" class="p-2" data-netlify="true">
+            <div class="form-group input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fas fa-user"></i></span>
+              </div>
+              <input type="text" name="name" class="form-control" placeholder="Nombre" required>
+            </div>
+            <div class="form-group input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+              </div>
+              <input type="email" name="email" class="form-control" placeholder="Email" required>
+            </div>
+            <div class="form-group input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fas fa-at"></i></span>
+              </div>
+              <input type="text" name="subject" class="form-control" placeholder="Titulo" required>
+            </div>
+            <div class="form-group input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fas fa-comment-alt"></i></span>
+              </div>
+              <textarea name="msg" id="msg" class="form-control" placeholder="Mensaje" cols="30" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+              <input type="submit" name="submit" id="submit" class="btn btn-primary btn-block" value="Enviar">
+            </div>
+          </form>
+        </div>
+        <div class="col-md-6 col-sm-12 mt-5 rounded">
+          <p>email: mauricioaznar94@gmail.com</p>
+          <p>email: administracion@grupoinopack.com</p>
+          <p>telefono: 9993516805 Mauricio Aznar</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="footer"><p>Grupo inopack</p></div>
+  </section>
 
   <script src="js/vendor/modernizr-3.7.1.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

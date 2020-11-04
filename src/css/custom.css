@@ -11,14 +11,31 @@
   background-size: cover;
 }
 
-.parallax .title {
+.parallax .legend {
   position: absolute;
   top: 50%;
-  left: 80%;
-  transform: translate(-50%, -50%);
+  transform: translate(0, -50%);
   color: white;
+  left: 10%;
   text-align: center;
   width: 20%;
+}
+
+.certificate-block {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translate(0, -50%);
+}
+
+.certificate-block .title {
+  color: white;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.certificate-image {
+  filter: invert(100%);
 }
 
 p {
